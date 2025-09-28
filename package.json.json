@@ -1,0 +1,20 @@
+{
+  "name": "joana-inacio-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Joana Inácio - Front-end Developer",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "build": "echo This is a static template, there is no bundler or bundling involved!"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoanaInacio/portfolio.git"
+  },
+  "keywords": ["portfolio", "front-end", "developer", "html", "css", "bootstrap"],
+  "author": "Joana Inácio",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.2.0"
+  }
+}

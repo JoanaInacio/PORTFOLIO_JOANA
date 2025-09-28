@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joana Inácio - Front-end Developer Portfolio | Lisbon, Portugal</title>
+    <meta name="description" content="Portfolio of Joana Inácio, a front-end developer based in Lisbon, Portugal. Specializing in responsive web applications using HTML, CSS, JavaScript, Bootstrap, and Python.">
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      :root {
+        --primary-color: #6c63ff;
+        --secondary-color: #f5f2fe;
+        --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      body {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        margin: 0;
+        padding: 60px 20px;
+      }
+
+      .main-container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: var(--box-shadow);
+      }
+
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 42px;
+        color: var(--primary-color);
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 8px;
+      }
+
+      h3 {
+        font-size: 18px;
+        opacity: 0.8;
+        margin-bottom: 20px;
+      }
+
+      .navigation-links {
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+      }
+
+      .navigation-links a {
+        margin: 15px;
+        border-radius: 4px;
+        padding: 12px 20px;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 16px;
+      }
+
+      .contact-link {
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+      }
+
+      .contact-link:hover {
+        background: #5a54d6;
+        color: white;
+        transform: translateY(-2px);
+      }
+
+      .about-link {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+      }
+
+      .about-link:hover {
+        background: var(--primary-color);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: var(--box-shadow);
+      }
+
+      .projects-section {
+        margin-top: 50px;
+      }
+
+      .projects-title {
+        color: var(--primary-color);
+        font-size: 28px;
+        margin-bottom: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .navigation-links {
+          flex-direction: column;
+          align-items: center;
+        }
+        
+        .navigation-links a {
+          margin: 8px;
+          width: 200px;
+          text-align: center;
+        }
+        
+        h1 {
+          font-size: 32px;
+        }
+        
+        .main-container {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <h1>Joana Inácio</h1>
+      <h2>Front-end developer, based in Lisbon, Portugal</h2>
+      <h3>Developing modern, responsive web solutions</h3>
+
+      <div class="navigation-links">
+        <a href="about.html#contact" class="contact-link" title="Contact Joana Inácio">Contact me</a>
+        <a href="about.html" class="about-link" title="Learn more about Joana Inácio">About me</a>
+      </div>
+
+      <!-- Projects section using Bootstrap cards -->
+      <div class="projects-section">
+        <h2 class="projects-title">My Projects</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/Weather-App.jpg"
+                class="card-img-top img-fluid"
+                alt="Weather App - Real-time weather application with location-based forecasts by Joana Inácio"
+                style="
+                  height: 250px;
+                  object-fit: cover;
+                  background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+                "
+                width="400"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-primary fw-bold">Weather App</h3>
+                <p class="card-text flex-grow-1">
+                  A weather application with advanced features including
+                  location-based weather data, detailed forecasts, and real-time
+                  updates.
+                </p>
+                <a
+                  href="https://plusfinal-joanainacio.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary shadow-sm mt-auto"
+                  title="Launch Weather App by Joana Inácio"
+                  >Launch Weather App</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/Portuguese-Poem-App.jpg"
+                class="card-img-top img-fluid"
+                alt="Portuguese Poem Generator - AI-powered poetry application by Joana Inácio"
+                style="
+                  height: 250px;
+                  object-fit: cover;
+                  background: linear-gradient(45deg, #ff6b9d 0%, #c44569 100%);
+                "
+                width="400"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-primary fw-bold">
+                  Portuguese Poem Generator
+                </h3>
+                <p class="card-text flex-grow-1">
+                  An AI-powered application that generates beautiful Portuguese
+                  poetry. Combines language processing with creative writing to
+                  produce original poems in Portuguese literary tradition.
+                </p>
+                <a
+                  href="https://resplendent-crumble-b0aad8.netlify.app/"
+                  target="_blank"
+                  class="btn btn-primary shadow-sm mt-auto"
+                  title="Launch Portuguese Poem Generator by Joana Inácio"
+                  >Launch Poem Generator</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-4 mb-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img
+                src="images/World-Clocks.jpg"
+                class="card-img-top img-fluid"
+                alt="World Clock App - International time zone application by Joana Inácio"
+                style="
+                  height: 250px;
+                  object-fit: cover;
+                  background: linear-gradient(45deg, #fa709a 0%, #fee140 100%);
+                "
+                width="400"
+              />
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title text-primary fw-bold">World Clock App</h3>
+                <p class="card-text flex-grow-1">
+                  A world clock application displaying time zones from major
+                  cities around the globe. Features real-time updates, clean
+                  design, and intuitive navigation for travelers and
+                  international teams.
+                </p>
+                <a
+                  href="https://joana-i-shecodes-plus-add-on-project.netlify.app/#"
+                  target="_blank"
+                  class="btn btn-primary shadow-sm mt-auto"
+                  title="Launch World Clock App by Joana Inácio"
+                  >Launch World Clock App</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
